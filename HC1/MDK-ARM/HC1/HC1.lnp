@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"hc1\startup_stm32f051x8.o"
+"hc1\main.o"
+"hc1\stm32f0xx_it.o"
+"hc1\stm32f0xx_hal_msp.o"
+"hc1\stm32f0xx_hal_tim.o"
+"hc1\stm32f0xx_hal_tim_ex.o"
+"hc1\stm32f0xx_hal_rcc.o"
+"hc1\stm32f0xx_hal_rcc_ex.o"
+"hc1\stm32f0xx_hal.o"
+"hc1\stm32f0xx_hal_i2c.o"
+"hc1\stm32f0xx_hal_i2c_ex.o"
+"hc1\stm32f0xx_hal_gpio.o"
+"hc1\stm32f0xx_hal_dma.o"
+"hc1\stm32f0xx_hal_cortex.o"
+"hc1\stm32f0xx_hal_pwr.o"
+"hc1\stm32f0xx_hal_pwr_ex.o"
+"hc1\stm32f0xx_hal_flash.o"
+"hc1\stm32f0xx_hal_flash_ex.o"
+"hc1\stm32f0xx_hal_exti.o"
+"hc1\stm32f0xx_hal_uart.o"
+"hc1\stm32f0xx_hal_uart_ex.o"
+"hc1\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "HC1\HC1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HC1.map" -o HC1\HC1.axf
